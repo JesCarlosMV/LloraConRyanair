@@ -38,7 +38,7 @@ export default function Home() {
       />
       <div className="flex flex-col p-10">
         <label className="flex flex-col text-center">
-          horas trabajadas
+          Horas trabajadas
           <input
             value={horasTrabajadas}
             type="text"
@@ -46,17 +46,20 @@ export default function Home() {
             onChange={(e) => setHorasTrabajadas(e.target.value)}
           ></input>
         </label>
+        {/*
+          ---------------------------- AÑADIR ESTA FUNCIONALIDAD ------------------
+          
         <label className="flex flex-col text-center">
-          horas NO trabajadas
+          Horas NO trabajadas
           <input
             value={horasNoTrabajadas}
             type="text"
             className="border-2"
             onChange={(e) => setHorasNoTrabajadas(e.target.value)}
           ></input>
-        </label>
+        </label>*/}
         <label className="flex flex-col text-center">
-          irpf
+          Irpf
           <input
             value={irpf}
             type="text"

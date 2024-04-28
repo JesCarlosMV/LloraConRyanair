@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import ModalBienvenida from './components/ModalBienvenida';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,11 +15,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-gray-100">
+    <html lang="en" className="bg-slate-300">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <ModalBienvenida />
+      </body>
     </html>
   );
 }
